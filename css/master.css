@@ -1,0 +1,343 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #add980;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav > * {
+  margin: 10px;
+  color: white;
+}
+
+.logo {
+  width: 150px;
+  height: 75px;
+  background-image: url(../images/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nav-link {
+  color: white;
+  font-family: sans-serif;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 100%;
+  margin-left: 100px;
+}
+
+#home h1 {
+  color: white;
+  font-size: 120px;
+  width: 1000px;
+  font-family: serif;
+}
+
+.scroll {
+  color: white;
+  font-family: sans-serif;
+}
+
+/*
+███████ ███████ ██████  ██    ██ ██  ██████ ███████ ███████
+██      ██      ██   ██ ██    ██ ██ ██      ██      ██
+███████ █████   ██████  ██    ██ ██ ██      █████   ███████
+██ ██      ██   ██  ██  ██  ██ ██      ██           ██
+███████ ███████ ██   ██   ████   ██  ██████ ███████ ███████
+*/
+
+#services {
+  width: 100%;
+  height: 250px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+.service i {
+  color: #add980;
+  font-size: 50px;
+}
+
+.service p {
+  text-align: center;
+  margin: 10px;
+  font-size: 20px;
+}
+
+/*
+██████  ███████ ███████ ████████ ███████ ███████ ██      ██      ███████ ██████  ███████
+██   ██ ██      ██         ██    ██      ██      ██      ██      ██      ██   ██ ██
+██████  █████   ███████    ██    ███████ █████   ██      ██      █████   ██████  ███████
+██   ██ ██           ██    ██         ██ ██      ██      ██      ██      ██   ██      ██
+██████  ███████ ███████    ██    ███████ ███████ ███████ ███████ ███████ ██   ██ ███████
+*/
+
+.section-title {
+  font-family: serif;
+  font-size: 90px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.section-title::before {
+  content: "";
+  width: 70px;
+  height: 10px;
+  background: #add980;
+  position: absolute;
+  bottom: 0;
+}
+
+
+#bestsellers, #plantes {
+  margin: 0 70px;
+  width: calc(100% - (70px * 2));
+}
+
+.bestsellers-products {
+  width: calc((25% - 70 / 4px) * 4);
+  height: 450px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.plante {
+  width: 25%;
+  height: 400px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.description-plante {
+  background: rgba(255, 255, 255, 0.85);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description-plante > * {
+  padding: 20px;
+}
+
+.price {
+  color: #add980;
+}
+
+.more-about {
+  padding: 10px 20px;
+  margin: 20px;
+  border: none;
+  outline: none;
+  background: #add980;
+  border-radius: 40px;
+  color: white;
+  cursor: pointer;
+  transition: .3s linear;
+  box-shadow: 0px 5px #D2D4D4;
+}
+
+.more-about:hover {
+  background: #01aa95;
+}
+
+.dark .description-plante {
+  background: rgba(233, 235, 234, 0.85);
+}
+
+.dark .more-about {
+  box-shadow: 0px 5px #B7B7B7;
+}
+
+/*
+██████   ██████      ██████  ██       █████  ███    ██ ████████ ███████ ███████
+██   ██ ██           ██   ██ ██      ██   ██ ████   ██    ██    ██      ██
+██████  ██   ███     ██████  ██      ███████ ██ ██  ██    ██    █████   ███████
+██   ██ ██    ██     ██      ██      ██   ██ ██  ██ ██    ██    ██           ██
+██████   ██████      ██      ███████ ██   ██ ██   ████    ██    ███████ ███████
+*/
+
+
+.meilleure-plante-1 {
+  background-image: url(../images/nos_meilleures_ventes/1.jpg);
+}
+
+.meilleure-plante-2 {
+  background-image: url(../images/nos_meilleures_ventes/2.jpg);
+}
+
+.meilleure-plante-3 {
+  background-image: url(../images/nos_meilleures_ventes/3.jpg);
+}
+
+.meilleure-plante-4 {
+  background-image: url(../images/nos_meilleures_ventes/4.jpg);
+}
+
+.plante1 {
+  background-image: url(../images/nos_plantes/1.jpg);
+}
+
+.plante2 {
+  background-image: url(../images/nos_plantes/2.jpg);
+}
+
+.plante3 {
+  background-image: url(../images/nos_plantes/3.jpg);
+}
+
+.plante4 {
+  background-image: url(../images/nos_plantes/4.jpg);
+}
+
+.plante5 {
+  background-image: url(../images/nos_plantes/5.jpg);
+}
+
+.plante6 {
+  background-image: url(../images/nos_plantes/6.jpg);
+}
+
+/*
+██████  ██       █████  ███    ██ ████████ ███████ ███████
+██   ██ ██      ██   ██ ████   ██    ██    ██      ██
+██████  ██      ███████ ██ ██  ██    ██    █████   ███████
+██      ██      ██   ██ ██  ██ ██    ██    ██           ██
+██      ███████ ██   ██ ██   ████    ██    ███████ ███████
+*/
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.plante1 {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  width: 200%;
+  height: 800px;
+}
+
+.plante2 {
+  grid-column: 3/5;
+  width: 100%;
+  height: 400px;
+}
+
+.plante3 {
+  grid-column: 3/5;
+  grid-row: 2/4;
+  width: 100%;
+  height: 400px;
+}
+
+.grid2 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.plante4, .plante5, .plante6 {
+  grid-row: 1/4;
+  height: 800px;
+}
+
+.plante4 {
+  grid-column: 1;
+  width: 100%;
+}
+
+.plante5 {
+  grid-column: 2/3;
+  width: 200%;
+}
+
+.plante6 {
+  grid-column: 4;
+  width: 100%;
+}
+
+/*
+███████  ██████   ██████  ████████ ███████ ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+█████   ██    ██ ██    ██    ██    █████   ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+██       ██████   ██████     ██    ███████ ██   ██
+*/
+
+footer {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer h4 {
+  margin: 0 70px;
+}
+
+footer a {
+  margin: 0 70px;
+}
