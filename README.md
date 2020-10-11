@@ -1,3 +1,5 @@
+# 🏆 Challenge CSS
+Challenge CSS de Graven - Développement : https://www.youtube.com/watch?v=eYn-U770_4U
 
 # Challenge Assets
 
@@ -13,7 +15,7 @@ blanc : #fff
 blanc transparent : #FFFFFFDF
 vert clair : #ADD981
 
-Flaticon utilisées : 
+Flaticon utilisées :
 
 icone scroll vers le bas : `fas fa-angle-down`
 icone de magasin : `fas fa-store`
